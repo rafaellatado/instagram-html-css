@@ -1,0 +1,264 @@
+/* When you set an element's position to fixed, 
+it is taken out of the normal document flow. 
+That is why padding bottom and padding top separate the fixed elements 
+from their closest elements  */
+body {
+  padding-top: 95px;
+  padding-bottom: 40px; 
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.top_functionalities {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  padding: 20px 0;
+}
+
+.stories_centered {
+  display: flex;
+  justify-content: center;
+}
+
+.stories {
+  width: 100%;
+  max-width: 530px;
+  display: flex;
+  align-items: center;
+  overflow: auto; /* Allows horizontal scrolling if needed */
+  white-space: nowrap; /* Ensures images stay in a single row */
+  gap: 30px;
+  margin: 0 10px 0 10px;
+  scrollbar-width: none; /* To hidescroll bar in Firefox */
+}
+
+/* To hide scrollbar in Chrome, Safari, Opera. 
+PS: On my Chrome 'scrollbar-width: none;' is working without this command. */
+.stories::-webkit-scrollbar {
+  display: none; 
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  margin-bottom: -10px;
+  /* object-fit: cover; */ /* Ensures the images cover the area */
+}
+
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts img {
+  width: 100%;
+  max-width: 614px;
+  height: auto;
+}
+
+.user_id_posts {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DBDBDB;
+  border-bottom: none;
+  padding: 10px 0 10px 10px;
+}
+
+.user_id_posts img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  margin-right: 10px;
+}
+
+.post_one {
+  margin-bottom: 60px;
+}
+
+.post_two {
+  margin-bottom: 30px;
+}
+
+.barra_inferior {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #DBDBDB;
+}
+
+.barra_inferior ion-icon {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.posts_icons {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  padding: 5px 10px 5px 10px;
+}
+
+.posts_icons ion-icon {
+  font-size: 24px;
+}
+
+.right {
+  display: none;
+}
+
+@media (min-width: 614px) /* and (max-width: 934px) */ {
+
+  body {
+    padding-top: 101px;
+  }
+
+  .top_functionalities {
+    display: block;
+    margin-right: 25px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .top_functionalities ion-icon {
+    font-size: 24px;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    margin-left: 25px;
+  }
+
+  .barra_inferior {
+    display: none;
+  }
+
+  .user_id_posts {
+    border: solid 1px #DBDBDB;
+    border-bottom: none;
+    padding: 10px;
+  }
+
+  .stories {
+    border: 1px solid #DBDBDB;
+    padding: 15px;
+    margin-bottom: 24px; 
+    max-width: 583px;
+  }
+
+}
+
+@media (min-width: 935px) {
+
+  .right {
+    display: block;
+    max-width: 293px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+  }
+
+  header {
+    justify-content: space-around;
+    gap: 300px;
+  }
+
+  .top_functionalities {
+    margin-right: 0;
+  }
+
+  header img {
+    margin-left: 0;
+  }
+
+  .right_desktop_user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 0;
+  }
+
+  .right_desktop_user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .sugestoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
+
+  .sugestoes_again {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sugestoes_left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sugestoes_left img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .marca_dagua {
+    color: #C7C7C7;
+  }
+
+  .sugestoes_right p {
+    color: #139EF2;
+  }
+
+  .username_nick p:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+
+  .username_nick p:nth-of-type(2) {
+    color: #C7C7C7;
+    margin-top: 5px;
+  }
+
+}
