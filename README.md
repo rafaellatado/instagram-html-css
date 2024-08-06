@@ -1,6 +1,6 @@
-# Static Instagram Replica
+# Instagram Clone
 
-You can view the Static Instagram Replica live at <a href="https://rafaellatado.github.io/static-ig-responsive/" target="_blank">https://rafaellatado.github.io/static-ig-responsive/</a>.
+If you want to see how it looks like, you can access it here: <a href="https://rafaellatado.github.io/instagram-html-css/" target="_blank">https://rafaellatado.github.io/instagram-html-css/</a>.
 
 ## Technologies Used
 - HTML: For structuring the content of the website.
